@@ -1,3 +1,4 @@
+const serverless = require('serverless-http');
 const express = require('express');
 const parser = require('body-parser');
 const passport = require('passport');
@@ -31,4 +32,4 @@ app.listen(config.port, () => {
   console.log(`Running on port: ${config.port}`);
 });
 
-module.exports = app;
+module.exports.handler = serverless(app);
