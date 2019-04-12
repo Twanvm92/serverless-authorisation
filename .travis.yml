@@ -1,0 +1,24 @@
+branches:
+  - master
+  - feature/travis
+
+language: node_js
+
+node_js:
+  - "stable"
+
+services:
+  - mongodb
+  - neo4j
+
+before_script:
+  - sleep 15
+
+after_succes:
+  - npm run coveralls
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: process.env.HEROKU_API_KEY
+  app: sportuniteb3-angular
