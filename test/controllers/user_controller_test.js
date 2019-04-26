@@ -4,9 +4,7 @@ const server = require('../../index');
 const expect = chai.expect;
 const assert = chai.assert;
 const bcrypt = require('bcryptjs');
-const session = require('../../db/neo4j');
-const auth = require('../../auth/token');
-const User = require('../../models/user');
+
 
 chai.use(chai_http);
 

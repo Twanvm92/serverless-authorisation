@@ -1,5 +1,5 @@
 {
-  "name": "sportunite-api",
+  "name": "serverless-authorisation-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,29 +11,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SvenWesterlaken/sportunite-api.git"
+    "url": "git+https://github.com/Twanvm92/serverless-authorisation.git"
   },
-  "author": "Twan van Maastricht, Luka Brinkman, Devon Marsham, Maikel Jacobs, Thimo Koolen & Sven Westerlaken",
+  "author": "Twan van Maastricht, Thimo Koolen",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/SvenWesterlaken/sportunite-api/issues"
-  },
-  "homepage": "https://github.com/SvenWesterlaken/sportunite-api#readme",
+  "homepage": "https://github.com/Twanvm92/serverless-authorisation#readme",
   "dependencies": {
-    "@google/maps": "^0.4.5",
-    "axios": "^0.17.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "dotenv": "^4.0.0",
     "express": "^4.16.2",
     "jsonwebtoken": "^8.1.0",
-    "lodash": "^4.17.4",
-    "moment": "^2.20.1",
-    "mongodb": "^3.0.0-rc0",
-    "mongoose": "^4.13.7",
-    "neo4j-driver": "^1.5.1",
-    "parse-neo4j": "^0.6.11",
+    "jwks-rsa": "^1.4.0",
     "passport": "^0.4.0",
+    "passport-auth0": "^1.1.0",
     "passport-jwt": "^3.0.1",
     "serverless-http": "^1.9.1"
   },
